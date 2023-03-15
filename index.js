@@ -12,10 +12,10 @@ app.get("/toto", function(req, res){
 });
 
 app.get("/", (req, res) => {
-    return res.sendFile(__dirname + "/client.html")
+    return res.sendFile(__dirname + "/index.html")
 })
 
-app.get("/form1", (req, res) => { 
+app.get("https://main-5k8s.onrender.com//form1", (req, res) => { 
   const annotation = annotations[req.query.annotationName]
   res.status(200).send(annotation)
 });
@@ -24,7 +24,7 @@ app.get("/form2", (req, res) => {
     res.status(200).send(annotations)
   });
 
-  app.get("/form3", (req, res) => { 
+  app.get("https://main-5k8s.onrender.com//form3", (req, res) => { 
     data = {}
     for (anot in annotations){
         if (annotations[anot]['URI']==req.query.URIannotations){
