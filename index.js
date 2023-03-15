@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
 
 app.get("/form1", (req, res) => { 
   const annotation = annotations[req.query.annotationName]
-  const annot = req.query.languages
-  res.status(200).send(annotation)
+  const annot = req.query.lang
+  res.status(200).send(annot)
 });
 
 app.get("/form2", (req, res) => { 
