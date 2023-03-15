@@ -8,19 +8,48 @@
 <body>
 <div class="formulaire-annotation">
     <h1>Formulaire annotations</h1>
+
+    <h2>Ajouter une annotation</h2>
     <form action="/form" method="get">
     <div>
     <label for="URI">URI</label>
-    <input type="text" id="URI" name="URI" required>
+    <input type="text" id="URI" name="URI">
     </div>
     <div>
     <label for="annotation">Annotation</label>
-    <textarea id="annotation" name="annotation" required></textarea>
+    <textarea id="annotation" name="annotation"></textarea>
     </div>
     <div>
     <button type="submit">Envoyer l'annotation</button>
     </div>
     </form>
+
+    <h2>Récupérer une annotation</h2>
+    <form action="/form1" method="get">
+    <div>
+    <label for="annotationName">Nom de l'annotation</label>
+    <input type="text" id="annotationName" name="annotationName">
+    </div>
+    <button type="submit">Voir l'annotation</button>
+    </div>
+    </form>
+
+    <h2>Récupérer toutes les annotations d'une URI</h2>
+    <form action="/form3" method="get">
+    <div>
+    <label for="URIannotations">URI</label>
+    <input type="text" id="URIannotations" name="URIannotations">
+    </div>
+    <button type="submit">Voir l'annotation</button>
+    </div>
+    </form>
+
+    <h2>Récupérer toutes les annotations</h2>
+    <form action="/form2" method="get">
+    <button type="submit">Voir les annotations</button>
+    </div>
+    </form>
+
     </div>
 
 </body>
