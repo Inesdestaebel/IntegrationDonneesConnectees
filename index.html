@@ -31,6 +31,12 @@
     <input type="text" id="annotationName" name="annotationName">
     </div>
     <div>
+        <select name="languages" id="lang">
+            <option value="json">JSON</option>
+            <option value="html">HTML</option>
+          </select>
+    </div>
+    <div>
     <button type="submit">Voir l'annotation</button>
     </div>
     </form>
@@ -42,12 +48,24 @@
     <input type="text" id="URIannotations" name="URIannotations">
     </div>
     <div>
+        <select name="languages" id="lang">
+            <option value="json">JSON</option>
+            <option value="html">HTML</option>
+          </select>
+    </div>
+    <div>
     <button type="submit">Voir l'annotation</button>
     </div>
     </form>
 
     <h2>Récupérer toutes les annotations</h2>
     <form action="https://main-5k8s.onrender.com/form2" method="get">
+    <div>
+        <select name="languages" id="lang">
+            <option value="json">JSON</option>
+            <option value="html">HTML</option>
+        </select>
+    </div>
     <div>
     <button type="submit">Voir les annotations</button>
     </div>
