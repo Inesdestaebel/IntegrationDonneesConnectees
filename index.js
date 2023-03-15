@@ -18,8 +18,10 @@ app.get("/", (req, res) => {
 app.get("/form1", (req, res) => { 
   const annotation = annotations[req.query.annotationName]
   const annot = req.query.languages
-  if(annot=="html")
-  res.status(200).send(annot)
+  if(annot=="html"){
+
+  }
+  res.status(200).send(annotation)
 });
 
 app.get("/form2", (req, res) => { 
